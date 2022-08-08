@@ -1,0 +1,265 @@
+/* СТИЛИЗАЦИЯ ПО ТЕГАМ */
+
+/* для того что бы добавить стили необходимо выбрать блок(пример ниже) и в нем прописывать то что нам необходимо, применится
+для всех блоков кода*/
+/* background-color цвет фона */
+/* color цвет текста */
+/* font-size - размер шрифта*/
+
+/*margin-top: 40px;  используются для наружных отступов между блоками
+margin-left: 90px;
+margin-right: 260px;*/
+/* margin: top right bottom left; можно делать запись в одну строку по такому принципу, вместо сторон указываем размеры
+   в порядке как написано
+   margin: 50px динаковый отступ со всех сторон;
+   margin: 100px 50px; одинаковый отступ верх-низ, лево-право */
+
+/* li {
+    background-color: yellow;
+}
+
+h3{
+    color: blueviolet;
+}
+
+div{
+    background: brown;
+} */
+
+/*СТИЛИЗАЦИЯ ПО КЛАССАМ*/
+/* для того что бы иметь возможность менять стили для каждого тега отдельно, мы должны в нашем HTML коде присвоить каждому тегу
+(по необходимости) классы(индивидуальное название тега, если в названии больше одного слова пишем через - или _, иначе программа
+воспримет название как два разных класса */
+
+
+/*PROJECT CODE */
+
+body {
+    font-family: 'Montserrat', sans-serif; /* применяем шрифты ко всему сайту, данные копируем с сайта https://fonts.google.com/ */
+    background-color: #F5F7FA;
+}
+
+.main{
+    display: flex; /* размещает блоки в одну линию (FLEXBOX)*/
+    flex-direction: row-reverse; /* меняем расположение блоков*/
+    width: 1200px;
+    margin: 0 auto;
+}
+/*main-content*/
+.main-content{
+    background-color: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 105px 90px;
+}
+/* about styles */
+.about{
+    margin-bottom: 40px;
+}
+.about-position {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.about-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000000;
+    margin-bottom: 25px;
+
+}
+.about-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    width: 400px;
+}
+
+/* project styles */
+.projects{
+    margin-bottom: 50px;
+
+}
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 10px;
+
+}
+.project-list {
+    padding: 0;
+    margin-left: 17px;
+}
+.project-item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+.project-text,
+.project-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+.project-link {
+    margin-left: 10px;
+}
+.project-bracket {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* work styles */
+.work{
+    width: 525px;
+    margin-bottom: 45px;
+
+}
+.work-position {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.organization {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FB6D3A;
+}
+.period {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+    margin-bottom: 10px;
+}
+.line {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+.work-list {
+    padding: 0;
+    margin-left: 17px;
+}
+.work-list-item{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959
+}
+/* education styles */
+.education{
+
+}
+.university {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FB6D3A;
+    margin-bottom: 10px;
+}
+.speciality {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* sidebar */
+.sidebar{
+    background-color: #1E2939;
+    padding-top: 40px; /* используется для отступов внутри блока, принцип такой же как margin */
+    /*padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 40px;*/
+    width: 370px; /* размеры */
+}
+.photo {
+    width: 370px;
+    margin-bottom: 50px;
+}
+.contacts,
+.tech-skills,
+.soft-skills {
+    margin-left: 40px;
+}
+.contacts {
+    margin-bottom: 50px;
+}
+
+.sidebar-title {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom:10px;
+
+}
+.contact-type {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: 10px;
+
+}
+.contact-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8E949C;
+
+}
+.tech-skills-list {
+    color: #FFFFFF;
+    padding: 0; /* списки по дефолту имеют отступ,что бы обнулить этот отступ код слева*/
+    margin-left: 17px;
+}
+.tech-skills-item,
+.soft-skills-item {
+    color: #FB6D3A;
+}
+.tech-skills-text,
+.soft-skills-text {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+
+
